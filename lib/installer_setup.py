@@ -15,7 +15,7 @@ def installer():
         'if exist "pixelgame" (rmdir "pixelgame" /s /q)',
         "git clone --depth 3 https://github.com/Tobdu399/pixelgame.git",
         "title Finishing Installation...",
-        'pyinstaller --noconfirm --onefile --windowed --icon "' + formatted_path + '/pixelgame/lib/pictures/display/icon.ico" --add-data "' + formatted_path + '/pixelgame/lib;lib/" "' + formatted_path + '/pixelgame/__main__.pyw"',
+        'pyinstaller --noconfirm --onefile --windowed --icon "' + formatted_path + '/pixelgame/lib/pictures/display/icon.ico" --add-data "' + formatted_path + '/pixelgame/lib;lib/"  "' + formatted_path + '/pixelgame/__main__.pyw"',
         'if exist "pixelgame\__pycache__" (rmdir "pixelgame\__pycache__" /s /q)',
         'ren "pixelgame" "source"',
         "mkdir pixelgame",
